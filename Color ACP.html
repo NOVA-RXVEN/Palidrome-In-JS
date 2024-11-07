@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(157, 188, 200);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+    <h1>Changing Background Color</h1>
+    <h3>This Web is perfect for kids those who don't kow about colors!</h3>
+    <p><b>Press the button and enjoy!<b></b></p><br><br>
+    <button  onclick="clickFunction()" type="button" class="btn btn-danger"> <h3><b><i>Press Me!</i></b></h3></button><br><br><br><br><br><br><br><br>
+    
+    <script>
+        function clickFunction(){
+            let bg = document.getElementById('background');
+            let colors=["red", "green", "blue", "yellow", "indigo", "brown", "grey", "pink", "purple", "violet", "black", "cyan"];
+
+            const colorIndex= parseInt(Math.random()*colors.length);
+            bg.style.backgroundColor = colors[colorIndex];
+        }
+    </script>
+</body>
+</html>
